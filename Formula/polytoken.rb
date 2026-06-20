@@ -1,21 +1,21 @@
 class Polytoken < Formula
   desc "AI agent harness"
   homepage "https://polytoken.dev"
-  version "0.2.1"
+  version "0.2.2"
   license :cannot_represent
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://dl.polytoken.dev/0.2.1/macos-arm64/polytoken.tar.gz"
-    sha256 "e2147d4af0f93c07e150c6f4119256056e2cfa40c88218bc677f33db5c27aeb2"
+    url "https://dl.polytoken.dev/0.2.2/macos-arm64/polytoken.tar.gz"
+    sha256 "c4cc625939b5cc6161011165d33964a641cfe18accbee8c84206312a3ec4651a"
   elsif OS.mac? && Hardware::CPU.intel?
-    url "https://dl.polytoken.dev/0.2.1/macos-amd64/polytoken.tar.gz"
-    sha256 "d9f81e7d692008a9956fb446034149decd640607ce0f22481506aa294172069d"
+    url "https://dl.polytoken.dev/0.2.2/macos-amd64/polytoken.tar.gz"
+    sha256 "8db7417d4c4d307306ce89dd2fb11dc16620114c3302d11dd76bd6794fd46d48"
   elsif OS.linux? && Hardware::CPU.arm?
-    url "https://dl.polytoken.dev/0.2.1/linux-arm64/polytoken.tar.gz"
-    sha256 "ef1e23c065c40ce95e8ff99d9fb04108845601bdd5b9ce513afd211c2bde4713"
+    url "https://dl.polytoken.dev/0.2.2/linux-arm64/polytoken.tar.gz"
+    sha256 "09130fe15ab6078a182fd3350040b08eab61585c07752af8db5d9700b5253532"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://dl.polytoken.dev/0.2.1/linux-amd64/polytoken.tar.gz"
-    sha256 "b2626285a827770c115a1a0ca749278212908e9554955d3aaff1c8e6c7b75f11"
+    url "https://dl.polytoken.dev/0.2.2/linux-amd64/polytoken.tar.gz"
+    sha256 "c18052fe97d07b0df7ad84004ee7bcba72360d77f35e4553c8f66ca3e78c3a59"
   else
     odie "Unsupported platform"
   end
