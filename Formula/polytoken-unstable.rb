@@ -1,22 +1,22 @@
 class PolytokenUnstable < Formula
   desc "AI agent harness"
   homepage "https://polytoken.dev"
-  version "0.4.0-unstable.3"
+  version "0.4.0-unstable.4"
   license :cannot_represent
   conflicts_with "polytoken", because: "both install the polytoken executable"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://dl.polytoken.dev/unstable/0.4.0-unstable.3/macos-arm64/polytoken.tar.gz"
-    sha256 "2f7c41383e1889c6a2fa0d23e94c82e9a8cd77df9a3421eaf85386ec9b923386"
+    url "https://dl.polytoken.dev/unstable/0.4.0-unstable.4/macos-arm64/polytoken.tar.gz"
+    sha256 "7fd0c13988591636c018787184a8a32965bdebdcfc6c94905ea7e3b286dabd49"
   elsif OS.mac? && Hardware::CPU.intel?
-    url "https://dl.polytoken.dev/unstable/0.4.0-unstable.3/macos-amd64/polytoken.tar.gz"
-    sha256 "27bed0639cb596ab3548ae2de3adb52e7ffbaa9c9ff604e13ff17271005bd3d2"
+    url "https://dl.polytoken.dev/unstable/0.4.0-unstable.4/macos-amd64/polytoken.tar.gz"
+    sha256 "6c82f2a6ba8a5a825780fc5664f6d7e7363315c403d71bcf541f49a8e583d881"
   elsif OS.linux? && Hardware::CPU.arm?
-    url "https://dl.polytoken.dev/unstable/0.4.0-unstable.3/linux-arm64/polytoken.tar.gz"
-    sha256 "de1ff08ef0ee49792dd909422d055fd539c9f0690b1ca6658c38486528f987de"
+    url "https://dl.polytoken.dev/unstable/0.4.0-unstable.4/linux-arm64/polytoken.tar.gz"
+    sha256 "3ba14669ca8084bce7cdb24367612c0e3064b3574e50b0210de15888f50e085f"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://dl.polytoken.dev/unstable/0.4.0-unstable.3/linux-amd64/polytoken.tar.gz"
-    sha256 "468d6f3116ceb7ee3af65aeaa73a74ce745aeb78071519b12a86b071f25ca270"
+    url "https://dl.polytoken.dev/unstable/0.4.0-unstable.4/linux-amd64/polytoken.tar.gz"
+    sha256 "e59f23dc684a3d78b478751cffd06f871de18ecdd8e21068bfb07d478ae4f092"
   else
     odie "Unsupported platform"
   end
