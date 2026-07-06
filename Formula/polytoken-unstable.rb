@@ -2,6 +2,9 @@ class PolytokenUnstable < Formula
   desc "AI agent harness"
   homepage "https://polytoken.dev"
   version "0.4.0"
+  # See version_scheme rules in tools/release-update-homebrew-tap.sh.
+  # Bump this integer at each branch-replacement transition; never decrease it.
+  version_scheme 2
   license :cannot_represent
   conflicts_with "polytoken", because: "both install the polytoken executable"
 
