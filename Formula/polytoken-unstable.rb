@@ -1,25 +1,25 @@
 class PolytokenUnstable < Formula
   desc "AI agent harness"
   homepage "https://polytoken.dev"
-  version "0.4.0"
+  version "0.5.0-unstable.1"
   # See version_scheme rules in tools/release-update-homebrew-tap.sh.
   # Bump this integer at each branch-replacement transition; never decrease it.
-  version_scheme 2
+  version_scheme 1
   license :cannot_represent
   conflicts_with "polytoken", because: "both install the polytoken executable"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://dl.polytoken.dev/unstable/0.4.0/macos-arm64/polytoken.tar.gz"
-    sha256 "38eaa0fad40d1a48d551a39472f9fd0fb0e71f25b16af08762dbb10fcda28a04"
+    url "https://dl.polytoken.dev/unstable/0.5.0-unstable.1/macos-arm64/polytoken.tar.gz"
+    sha256 "424b70b2cbc3a575312c35b5ea9184650ccd24c3301dde5dc7f9da478cd2de3d"
   elsif OS.mac? && Hardware::CPU.intel?
-    url "https://dl.polytoken.dev/unstable/0.4.0/macos-amd64/polytoken.tar.gz"
-    sha256 "b5afb1a15050add62c4cd8bcad9a291a835b6ec3a3c453e9a77764b65ce64325"
+    url "https://dl.polytoken.dev/unstable/0.5.0-unstable.1/macos-amd64/polytoken.tar.gz"
+    sha256 "7ae1968cbc36b238848cb1b349600672079f32624bc54951abca7c2d2af7025a"
   elsif OS.linux? && Hardware::CPU.arm?
-    url "https://dl.polytoken.dev/unstable/0.4.0/linux-arm64/polytoken.tar.gz"
-    sha256 "d312ba2280810efa51652478838a2853a87b00621c797a79cdb7c3964c4ed7a6"
+    url "https://dl.polytoken.dev/unstable/0.5.0-unstable.1/linux-arm64/polytoken.tar.gz"
+    sha256 "a5c8ea097aae5d5370ec6996d793ffb0246970cdb17a492ea2ed44bdc3aeb8fa"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://dl.polytoken.dev/unstable/0.4.0/linux-amd64/polytoken.tar.gz"
-    sha256 "dc580919b2448323ee6990d390445494b61b5f21f0b280f65bdf2560dc0e520a"
+    url "https://dl.polytoken.dev/unstable/0.5.0-unstable.1/linux-amd64/polytoken.tar.gz"
+    sha256 "97dc398c15d70271d6e63e294be284016c0eae7fb9f8fdac484d8f95cbff3f6f"
   else
     odie "Unsupported platform"
   end
