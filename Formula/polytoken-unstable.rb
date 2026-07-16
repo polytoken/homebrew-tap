@@ -1,7 +1,7 @@
 class PolytokenUnstable < Formula
   desc "AI agent harness"
   homepage "https://polytoken.dev"
-  version "0.5.0-unstable.8"
+  version "0.5.0-unstable.9"
   # See version_scheme rules in tools/release-update-homebrew-tap.sh.
   # Bump this integer at each branch-replacement transition; never decrease it.
   version_scheme 1
@@ -9,17 +9,17 @@ class PolytokenUnstable < Formula
   conflicts_with "polytoken", because: "both install the polytoken executable"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://dl.polytoken.dev/unstable/0.5.0-unstable.8/macos-arm64/polytoken.tar.gz"
-    sha256 "fef45f2f5d920177f97eae70906ec5a021f06c3e3cf690b24d81fdf836c5acd1"
+    url "https://dl.polytoken.dev/unstable/0.5.0-unstable.9/macos-arm64/polytoken.tar.gz"
+    sha256 "b1638c1da1ff62866632da000a49a3c74acfe2e89c60ef608aa014737690c17b"
   elsif OS.mac? && Hardware::CPU.intel?
-    url "https://dl.polytoken.dev/unstable/0.5.0-unstable.8/macos-amd64/polytoken.tar.gz"
-    sha256 "e91a51f239ed2f5bd94f3e3162834443db652bd8726ee9b452b0517115af3320"
+    url "https://dl.polytoken.dev/unstable/0.5.0-unstable.9/macos-amd64/polytoken.tar.gz"
+    sha256 "aaf03736f69c6d1a268160a28f9d8312f063aea7d57882e8491e97bd4469e7e8"
   elsif OS.linux? && Hardware::CPU.arm?
-    url "https://dl.polytoken.dev/unstable/0.5.0-unstable.8/linux-arm64/polytoken.tar.gz"
-    sha256 "e5be653c98d730ac8f48511a0f8a961c8631426585ccdf5674437ecb152e56e1"
+    url "https://dl.polytoken.dev/unstable/0.5.0-unstable.9/linux-arm64/polytoken.tar.gz"
+    sha256 "9509debcfee1e289eebe82b552dae97890c62841ef7bf4ad63f113d755c48b8c"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://dl.polytoken.dev/unstable/0.5.0-unstable.8/linux-amd64/polytoken.tar.gz"
-    sha256 "2f30a2e2550c640613140cffd1ce4c640b157ce77b53b988baee8158709fcbe6"
+    url "https://dl.polytoken.dev/unstable/0.5.0-unstable.9/linux-amd64/polytoken.tar.gz"
+    sha256 "0ea668345dd91fe9fcf3306e4fcbf2cf49aa074938ae68da42a06a3bbe30d6b0"
   else
     odie "Unsupported platform"
   end
